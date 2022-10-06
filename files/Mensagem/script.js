@@ -17,7 +17,7 @@ function carConteudo(params) {
          "<img src='./img/paraiso1.webp'>"
 
 
-    }, 4000);
+    }, 5000);
     
 }
     removerMensagem();
