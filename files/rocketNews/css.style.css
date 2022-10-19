@@ -1,0 +1,172 @@
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.contanier img {
+  width: 5vw;
+  height: 5vh;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+.perfil1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20vw;
+}
+.perfil1 span {
+  margin-left: 4rem;
+  margin-top: -0.5rem;
+}
+h3 {
+  color: var(--form-color);
+  margin-left: 6rem;
+}
+.rocketnews {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100vw;
+}
+.rocket {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  padding: 0 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.rocket h4 {
+  color: var(--title-color);
+}
+.rocket img {
+  margin-top: 1rem;
+  width: 15vw;
+  height: 10vh;
+}
+.rocket span {
+  color: var(--form-color);
+  font-size: 0.8rem;
+}
+form i {
+  color: #e1e1e6;
+  background-color: var(--bg-button-color);
+  font-size: 2rem;
+  position: absolute;
+  left: 40rem;
+}
+form input {
+  width: 30vw;
+  height: 5vh;
+  position: absolute;
+  right: 38rem;
+}
+form label {
+  position: relative;
+  right: 8rem;
+}
+
+.news img {
+  width: 45vw;
+  height: 60vh;
+}
+.arrow {
+  display: flex;
+  justify-content: space-between;
+  color: var(--bg-button-color);
+  width: 13vw;
+}
+.arrow i {
+  color: #e1e1e6;
+}
+@media (max-width: 500px) {
+  .perfil1 {
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 40vw;
+  }
+  .perfil1 span {
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+  }
+  .rocketnews {
+    flex-direction: column;
+  }
+  .rocket {
+    height: 50vh;
+  }
+  .rocket img {
+    width: 30vw;
+  }
+  form i {
+    position: absolute;
+    left: -8rem;
+   
+  }
+
+  form input {
+    left: 13rem;
+    width: 40vw;
+  }
+  form label {
+    left: -8rem;
+  }
+  .news img {
+    width: 100vw;
+  }
+}
+@media (max-width: 700px) {
+  form i {
+    margin-left: -5rem;
+  }
+  form input {
+    right: 10rem;
+  }
+}
+@media (max-width: 989px) {
+  form i {
+    left: 32rem;
+  }
+  form input {
+    left: 13rem;
+    width: 35vw;
+  }
+  .arrow {
+    width: 20vw;
+  }
+  .rocket img {
+    width: 40vw;
+  }
+  .perfil1 span {
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+  }
+}
