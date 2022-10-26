@@ -1,0 +1,99 @@
+:root{
+    --color-bgPages:#EAEAEA;
+    --color-bgReceita:#FFFFFF;
+    --color-title:#1B1B1B;
+    --color-footer:#8F8F8F;
+    --color-text:#39393A;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: var(--color-bgPages);
+    font-family: 'Roboto', sans-serif;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+  height: 100vh;  
+  }
+ 
+.receita {
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  } 
+  .container{
+    background-color: var(--color-bgReceita);
+  
+    width: 56vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+   
+    border-radius: 0.5rem;
+  
+  } 
+  img{
+    width: 50vw;
+    height: 40vh;
+    border-radius: 0.5rem;
+  
+
+  }
+  h1, .text{
+    text-align: center;
+  } 
+ h1{
+  margin-bottom: 1rem;
+ }
+ .text{
+  width: 40vw;
+  gap: 20px;
+ }
+ h2{
+  padding: 1rem 0;
+ }
+ .text p{
+  padding-bottom: 1rem;
+ }
+
+  li{
+   
+    text-align: left;
+  }
+
+
+  /*footer*/
+  footer{
+    text-align: center;
+    padding: 1rem 0;
+
+  }
+  footer i{
+    color: red;
+    font-size: 12px;
+    margin-top: 1rem;
+  }
+  @media (min-width:800px){
+    .container{
+      margin-top: 25rem;
+  }
+}
+@media (min-width:500px){
+  .container{
+    margin-top: 23rem;
+}
+}
+@media (min-width:1200px){
+  .container{
+    margin-top: 20rem;
+}
+}
+
+
